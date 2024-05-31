@@ -12,16 +12,19 @@ html{
     font-size: 60%;
     overflow-x: hidden;
 }
-body{
-    background: var(--bg-color);
-    color: var(--text-color);
-}
+body {
+    /* Remove any default body padding */
+    background-color: #170707;
+    color: white;
+     /* Set the minimum height to the full viewport height */
+
+  }
 .header{
     position:fixed;
-    top: 0;
     left: 0;
-    padding: 4rem 12% 4rem;
-    background: rgba(0, 0, 0, 0.3);
+    right: 0;
+    padding: 4rem 12% 4rem 35%;
+    background:linear-gradient(180deg,rgb(208, 120, 60, 0.5),rgb(0, 0, 0,0.5)) transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,8 +33,9 @@ body{
 
 }
 .logo{
-    font-size: 3rem;
-    color: var(--text-color);
+    font-size: 4rem;
+    position: center;
+    color: white;
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease;
@@ -40,27 +44,55 @@ body{
     transform: scale(1.1);
 }
 .logo span{
-    text-shadow: 0 0 25px var(--main-color);
+    text-shadow:rgba(243, 151, 89, 0.815);
 }
-.navbar a{
-    font-size: 1.8rem;
-    color: var(--text-color);
-    margin-left: 4rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
+
+span{
+    color: rgba(243, 151, 89, 0.815);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: center;
+    margin-top: 80px;
+}
+.home-content h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+
+}
+.home-content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+img{
+    position: relative;
+    width: 32vw;
+    border-radius: 100%;
     
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    margin-top: 10px;
 }
-.navbar:hover{
-    transform: scale(1.1);
-}
-.navbar a.active{
-    color: var(--main-color);
-    border-bottom: 3px solid var(--main-color);
-}
-#menu-icon{
-    font-size: 3.6rem;
-    color: var(--main-color);
-    display: none;
+
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
 }
