@@ -11,22 +11,29 @@
 html{
     font-size: 60%;
     overflow-x: hidden;
+    margin-bottom: 0%; 
 }
-body {
-    
+body {    
     background-image: url(image/final2.jpg) ;
-    color: white;
-   
+    color: white; 
+    margin-bottom: 0%; 
+    
   }
 
 .header{
-    height: 45vh;
-    
-    margin: 0% 0% 40% 0%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding: 4rem 12% 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+    width: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    text-align: center;
-    width: 100%;
+    background: linear-gradient(180deg, rgb(128, 0, 128, 0.8), rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.5));
 }
 .logo{
     font-size: 60px;
@@ -47,18 +54,15 @@ span{
     color: rgba(243, 151, 89, 0.815);
 }
 .header-text{
-    
     font-size: 30px;
     text-align: center;
 }
-.header-text h4{
-    
+.header-text h4{    
     align-items: center;
     font-family: 'Kalam', cursive;
 }
 .header-text h4 span{
-    color:rgb(221, 32, 111);
-    
+    color:rgb(221, 32, 111); 
 }
 .inf{
     font-style: bold;
@@ -141,13 +145,11 @@ section{
     text-align: center;     
     padding: 1% 2.8% 1% 2.8%;
     height: 11%;
-    
-
-    
     position: absolute;
     top: 630px; /* Adjust the top value as needed */
     right: 35%;
     left: 35%;
+    margin-bottom: 0%;
 }
 .btn:hover{
     transform: scale(1.05);
